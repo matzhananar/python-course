@@ -4,7 +4,16 @@ b = int(input())
 c = int(input())
 d = int(input())
 
-if(a==c or b == d):
-    print("yes")
+k = a-c
+l = b-d
+
+if k<0:
+    k = -k
+
+if l<0:
+    l = -l
+
+if k == l:
+    print("слон бьет фигуру")
 else:
-    print("no")
+    print("слон не бьет")
