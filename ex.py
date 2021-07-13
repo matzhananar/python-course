@@ -1,2 +1,3 @@
-a  = 123
-print(a)
+print("hello world it's friday")
+print(1234)
+

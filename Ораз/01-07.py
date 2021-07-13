@@ -1,6 +1,15 @@
-x = int(input("Бірінші санды енгіз: "))
+a = int(input())
+b = int(input())
+c = int(input())
 
-u = x%10
-y = (x%100)//10
-z = x //100
-print(u+y+z)
+if a+b>c:
+    print("blabla")
+elif a+c > b:
+    print("meow")
+elif a+b<c:
+    print("boo")
+else:
+    print("what's happening")
+
+
+    
