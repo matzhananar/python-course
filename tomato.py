@@ -32,7 +32,7 @@ class TomatoBush:
 
     # Создаем список из объектов класса Tomato
     def __init__(self, num):
-        self.tomatoes = [Tomato(index) for index in range(0, num-1)]
+        self.tomatoes = [Tomato(index) for index in range(0, num)]
 
     # Переводим все томаты из списка на следующий этап созревания
     def grow_all(self):
@@ -73,21 +73,20 @@ class Gardener:
     # Статический метод
     # Выводит справку по садоводству
     @staticmethod
-    def knowledge_base():
-        print('''Harvest time for tomatoes should ideally occur
+    def knowledge_base(x):
+        print("""Harvest time for tomatoes should ideally occur
 when the fruit is a mature green and
 then allowed to ripen off the vine.
 This prevents splitting or bruising
-and allows for a measure of control over the ripening process.''')
+and allows for a measure of control over the ripening process.""")
 
 
 # Тесты
-if __name__ == '__main__':
-    Gardener.knowledge_base()
-    great_tomato_bush = TomatoBush(4)
-    gardener = Gardener('Emilio', great_tomato_bush)
-    gardener.work()
-    gardener.work()
-    gardener.harvest()
-    gardener.work()
-    gardener.harvest()
+Gardener.knowledge_base()
+great_tomato_bush = TomatoBush(3)
+gardener = Gardener('Emilio', great_tomato_bush)
+gardener.work()
+gardener.work()
+gardener.harvest()
+gardener.work()
+gardener.harvest()
