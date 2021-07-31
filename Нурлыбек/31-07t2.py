@@ -1,4 +1,4 @@
-#n = (int(i) for i in input().split())
+n = (int(i) for i in input().split())
 n = list(input().split())
 
 for x in range(0,len(n)):
