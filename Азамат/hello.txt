@@ -1,0 +1,6 @@
+1.hello from a file 
+2.u are reading me from terminal
+3.Now the file has more content!
+4.hello from a file 
+5.u are reading me from terminal
+6.Now the file has more content!
